@@ -5,13 +5,14 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     static public bool ShaveFlag = false;
-    public bool SwordFlag = false;
+    static public bool SwordFlag = false;
 
-    string targetName;
+    public string targetName;
+    public string hideName;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,11 +21,12 @@ public class Sword : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)                 // “–‚½‚è”»’è‚ðŽ@’m
+    void OnCollisionEnter(Collision collision)                 // “–‚½‚è”»’è‚ðŽ@’m
     {
         if (collision.gameObject.name == targetName)
         {
-            ShaveFlag = true;
+            GameObject hideObject = GameObject.Find(hideName);
+            hideObject.SetActive(false);
         }
     }
 }
