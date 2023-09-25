@@ -9,6 +9,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
       "depth": 1,
@@ -16,6 +17,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+=======
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -23,6 +25,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.feature.development": {
       "version": "1.0.1",
       "depth": 0,
@@ -37,6 +40,8 @@
         "com.unity.testtools.codecoverage": "1.2.2"
       }
     },
+=======
+>>>>>>> takasaki_test1
     "com.unity.ide.rider": {
       "version": "3.0.16",
       "depth": 0,
@@ -69,6 +74,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.performance.profile-analyzer": {
       "version": "1.1.1",
       "depth": 1,
@@ -76,6 +82,8 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> takasaki_test1
     "com.unity.services.core": {
       "version": "1.6.0",
       "depth": 1,
@@ -87,6 +95,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.settings-manager": {
       "version": "1.0.3",
       "depth": 2,
@@ -115,6 +124,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> takasaki_test1
     "com.unity.textmeshpro": {
       "version": "3.0.6",
       "depth": 0,
