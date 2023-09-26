@@ -8,7 +8,10 @@ public class playerMove : MonoBehaviour
     Rigidbody myRb;
 
     int rolltimer = 0;
+    float moveSpeed;
     float rotate = 0;
+    bool moveFrontFlag = false;
+    bool moveBackFlag = false;
     bool rollFlag = false;
     Vector3 move;
     Vector3 angle;
@@ -19,7 +22,7 @@ public class playerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        moveSpeed = 0.3f;
         angle = new Vector3(0, 1.0f, 0);
         myRb = this.GetComponent<Rigidbody>();
 
@@ -29,35 +32,35 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
-        {
-
-        }
-        move = transform.forward * 0.1f;
+        move = transform.forward * moveSpeed;
 
         if (Input.GetKey(KeyCode.W))
         {
-
-
-            myRb.position += move;
-
+            moveFrontFlag = true;
         }
+        else
+        {
+            moveFrontFlag = false;
+        }
+
         if (Input.GetKey(KeyCode.S))
         {
-
-
-            myRb.position -= move;
-
+            moveBackFlag = true;
         }
+        else
+        {
+            moveBackFlag = false;
+        }
+
         if (Input.GetKey(KeyCode.D))
         {
-            rotate += 0.3f;
+            rotate += 0.8f;
 
             this.transform.rotation = Quaternion.AngleAxis(rotate, angle);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rotate -= 0.3f;
+            rotate -= 0.8f;
 
             this.transform.rotation = Quaternion.AngleAxis(rotate, angle);
         }
@@ -70,6 +73,15 @@ public class playerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(moveFrontFlag)
+        {
+            myRb.position += move;
+        }
+        else if(moveBackFlag)
+        {
+            myRb.position -= move;
+        }
+
         if (rollFlag == true)
         {
             if (rolltimer < 10)
