@@ -1,0 +1,23 @@
+boss1 beast
+Sword And Shield Attack
+Hit To Side Of Body
+
+
+
+boss2 mutant
+Mutant Wailking
+Dying
+MutantJumping
+Sword and Shield  Slash
+Mutant Punch
+Mutant Jump Attack
+
+
+every
+Grate sword slash
+Dying
+Gettting Up
+Standing 2H Magic Attack 04
+zombie Attack
+standing melee combo
+Getting Smashed
